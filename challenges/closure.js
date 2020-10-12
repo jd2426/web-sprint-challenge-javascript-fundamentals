@@ -18,7 +18,18 @@ myFunction();
 
 // Explanation: 
 
+//The nested function can access the internal variable because the nested function will always have access to the parameters of its outer function.
 
 /* Task 2: Counter */
 
-/* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+/* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+
+function sumation(num) {
+  let counter = 0;
+  for(let i=0; i<=num; i++){
+    counter += i;
+  }
+  return counter;
+}
+
+console.log(sumation(4));
